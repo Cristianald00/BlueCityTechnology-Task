@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Blue City Technology - Challenge</title>
+</head>
+<body>
+
+  <header>
+    <h1>Blue City Technology</h1>
+    <p>Coding Challenge</p>
+  </header>
+
+  <main>
+
+    <!-- .................................... SECTION 1 .................................... -->
+    <div class="section1" id="section1">
+
+      <div class="menu-section1" >
+        <a id="menuTitle" onclick="dropdownMenu('1')"><span>Menu</span><i class="fa fa-caret-down"></i></a>
+
+        <div id="menu1" style="max-height: 0;">
+          <a href="#section2">Section 2</a>
+          <a href="#section3">Section 3</a>
+          <a href="#section4">Section 4</a>
+          <a onclick="dropdownMenu('2')" ><i class="fa fa-folder"></i> Bindings</a>
+
+          <div id="menu2" style="max-height: 0;">
+            <a onclick="dropdownMenu('3')" ><i class="fa fa-folder"></i> Libgit2sharp</a>
+
+            <div id="menu3" style="max-height: 0;">
+              <a href="#">0002_323</a>
+              <a href="#">0002_324</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- .................................... SECTION 2 .................................... -->
+    <div class="section2" id="section2">
+
+      <h2>Example Chart</h2>
+      <div class="legend">
+        <div class="square" style="background: #F2C777;"></div>NS<div class="square" style="background: #BF544B;"></div>NRL<div class="square" style="background: #637AA6;"></div>NLR<div class="square" style="background: #203959;"></div>NE<div class="square" style="background: #BF544B;"></div>NW
+      </div>
+
+      <p>Note: Scrool right to view more data</p>
+      <div id="columnchart_material" style="width: 800px; height: 500px;" ></div>
+
+    </div>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="chart.js"></script>
+
+
+    <!-- .................................... SECTION 3 .................................... -->
+
+    <div class="section3" id="section3">
+
+      <h2>Data From WebSocket</h2>
+      <div class="table-container">
+        <table>
+          <tr class="table-title">
+            <td colspan="3">Sensor</td>
+          </tr>
+          <tr class="table-value">
+            <td>Id: <span id="id-sensor" ></span></td>
+            <td>Motor: <span id="motor-sensor"></span></td>
+            <td>output: <span id="output-sensor"></span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <tr class="table-title">
+            <td colspan="2">Memory</td>
+          </tr>
+          <tr class="table-value">
+            <td>Total: <span id="total-sensor"></span></td>
+            <td>Available: <span id="available-sensor"></span></td>
+          </tr>
+          <tr class="table-title" >
+            <td colspan="2">CPU</td>
+          </tr>
+          <tr class="table-value">
+            <td>1: <span id="1-sensor"></span></td>
+            <td>2: <span id="2-sensor"></span></td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+
+    <!-- .................................... SECTION 4 .................................... -->
+    <div class="section4" id="section4">
+
+      <h2>Tree Chart</h2>
+
+    </div>
+
+    <script src="general.js" type = "text/javascript"></script>
+  </main>
+
+  <footer>
+    <div class="">
+      <p>Created By: Cristian Aldana</p>
+      <p>647-896-3257</p>
+      <p>cristianald00@hotmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>

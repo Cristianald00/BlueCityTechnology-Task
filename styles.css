@@ -1,0 +1,213 @@
+* {box-sizing: border-box}
+
+/* CONSTANTS */
+:root {
+  --appBlue: #3C5973;
+  --darkBlue: #253140;
+  --lightBlue: #7C92A6;
+  --white: #FFFAFA;
+  --beiche: #F2EBDC;
+
+  --fontBlack: rgb(41, 41, 41);
+  --lightGray: rgb(230, 230, 230);
+  --mediumGray: rgb(200, 200, 200);
+  --normalGray: rgb(112, 112, 112);
+  --darkGray: rgb(85, 85, 85);
+
+  --red: #BF544B;
+  --yellow: #F2C777;
+  --blue: #637AA6;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(1em + 1vw);
+  font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+}
+body{
+  top: 0px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  font-family: arial,ｍｓ ｐゴシック,ms pgothic,돋움,dotum,helvetica,sans-serif;
+  margin:0;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--fontBlack);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'helvetica neue';
+}
+
+
+main {
+  display: block;
+  text-align: center;
+}
+
+
+header{
+  display: block;
+  text-align: center;
+}
+header h1{
+  display: block;
+  font-family: 'verdana';
+  font-size: 1.2em;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 1em;
+  color: #2F2929;
+}
+header p{
+  display: block;
+  font-family: 'verdana';
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  color: #574E4E;
+}
+
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #707070;
+}
+
+/* ------------------------------------ SECTION 1 STYLES ------------------------------------ */
+
+#menuTitle {
+  display: flex;
+  background: var(--darkBlue);
+  justify-content: space-between;
+}
+
+.menu-section1 {
+  display: block;
+  margin: auto;
+  width: 400px;
+  max-width: 100%;
+}
+.menu-section1 a {
+  cursor: pointer;
+  display: block;
+  color: var(--white);
+  background: var(--appBlue);
+  padding: 0.8em 1em;
+  text-decoration: none;
+  transition: padding 0.3s;
+  border-bottom: 1px solid var(--lightGray);
+}
+.menu-section1 a:hover {
+  background: var(--beiche);
+  color: #3C5973;
+  padding: 1em;
+}
+.menu-section1 div a {
+  padding-left: 1em;
+}
+.menu-section1 div div a {
+  padding-left: 2em;
+}
+.menu-section1 div div div a {
+  padding-left: 3em;
+}
+
+#menu1, #menu2, #menu3 {
+  overflow-y: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+
+.openMenu {
+  display: block;
+}
+.closedMenu {
+  display: none;
+}
+
+
+
+/* ------------------------------------ SECTION 2 STYLES ------------------------------------ */
+.section2{
+  display: block;
+  border-top: 2em solid #F2EBDC;
+}
+
+#columnchart_material{
+  display: block;
+  width: 90%;
+  max-width: 90%;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.legend .square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 1em;
+  margin-right: 0.3em;
+}
+
+
+/* ------------------------------------ SECTION 3 STYLES ------------------------------------ */
+.section3, .section4{
+  display: block;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 3em 1em;
+  border-top: 2em solid #F2EBDC;
+}
+.table-container{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+table {
+  display: block;
+  margin: auto;
+}
+table td {
+  padding: 0.5em 0.8em;
+}
+.table-title td{
+  background: #3C5973;
+}
+.table-value td{
+  background: #7C92A6;
+}
+
+
+footer {
+  display: block;
+  width: 100%;
+  padding: 2em 1em;
+  background: #253140;
+  color: #FFFAFA;
+  margin: 0px;
+}
+
+
+
+/* ------------------------------------ Responsive ------------------------------------ */
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+  .menu-section1 {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+  }
+
+}
