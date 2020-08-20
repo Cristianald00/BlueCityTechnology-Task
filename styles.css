@@ -187,6 +187,55 @@ table td {
 }
 
 
+/* ------------------------------------ SECTION 4 STYLES ------------------------------------ */
+
+#section4 {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 1em 0px;
+}
+
+.chart {
+  height: 600px;
+  width: 100%;
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 0px auto;
+  border-radius: 3px;
+  text-align: left;
+}
+.tennis-draw {
+  font-size: 10px;
+  width: 10px;
+}
+
+.tennis-draw.winner { height: 38px;}
+.tennis-draw.winner:hover { background: url('trophy.png') right 0 no-repeat; }
+.tennis-draw.winner .node-name { padding-left: 10px; margin-top: 1px; display: block; }
+
+.tennis-draw .node-name { width: 300px; font-size: 1.5em; padding: 0.5em; white-space: pre; background: var(--darkBlue); color: var(--white); }
+.tennis-draw .node-desc { padding: 2px; color: #999; }
+
+.tennis-draw.first-draw .node-title,
+.tennis-draw.first-draw .node-name,
+.tennis-draw.first-draw img { display: block; width: 30px; position: absolute; top: -30px; }
+.tennis-draw.first-draw img {
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.tennis-draw.first-draw:hover img { display: block; width: 20px; top: 0px; }
+
+.tennis-draw.first-draw { width: 30px; height: 20px; }
+.tennis-draw.first-draw img { margin: 0px 0px 0 0; left: 25px; }
+.tennis-draw.first-draw .node-title { margin-top: 0px; }
+.tennis-draw.first-draw .node-name { width: 103px; padding-left: 50px; }
+.tennis-draw.first-draw.bye .node-name { color: #999;}
+
+
+
 footer {
   display: block;
   width: 100%;
@@ -195,7 +244,6 @@ footer {
   color: #FFFAFA;
   margin: 0px;
 }
-
 
 
 /* ------------------------------------ Responsive ------------------------------------ */
